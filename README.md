@@ -1,0 +1,1 @@
+# Opentelemetry-java-property-maker
