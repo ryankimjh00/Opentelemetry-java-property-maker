@@ -1,8 +1,8 @@
 # Opentelemetry-java-property-maker
 
-- Run `Opentelemetry-java-property-maker` where your main method place.
+- Run `OpentelemetryRunner` package where your main method place.
 
-- `Opentelemetry-java-property-maker` have to get your package name. So you have to set Opentelemetry-java-property-maker's package correctly.
+- `OpentelemetryRunner` package have to get your package name. So you have to set Opentelemetry-java-property-maker's package correctly.
 
 - `Opentelemetry-java-property-maker` creates a file called `otel.properties`, including the required values for setting the **otel agent**. The main function is to extract data for monitoring **trace data** using `Tempo`, `Zipkin`, or `Jaeger`.
 - To get a closer look at the trace data, the otel agent must recognize all classes and methods running in this application. `Opentelemetry-java-property-make`r helps you observe trace data by collecting classes and methods at high speed. **Like below**
