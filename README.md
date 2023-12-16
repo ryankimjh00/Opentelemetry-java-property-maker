@@ -5,7 +5,7 @@
 - `OpentelemetryRunner` package have to get your package name. So you have to set Opentelemetry-java-property-maker's package correctly.
 
 - `Opentelemetry-java-property-maker` creates a file called `otel.properties`, including the required values for setting the **otel agent**. The main function is to extract data for monitoring **trace data** using `Tempo`, `Zipkin`, or `Jaeger`.
-- To get a closer look at the trace data, the otel agent must recognize all classes and methods running in this application. `Opentelemetry-java-property-make`r helps you observe trace data by collecting classes and methods at high speed. **Like below**
+- To get a closer look at the trace data, the otel agent must recognize all classes and methods running in this application. `Opentelemetry-java-property-maker` helps you observe trace data by collecting classes and methods at high speed. **Like below**
  ```
 ...
 otel.instrumentaion.methods.include=com.example.path.change.{ClassName1}[Method1 Method2,Method3];\
@@ -35,3 +35,15 @@ com.example.path.change.{ClassName20}[Method1 Method2,Method3];
 22:57:05.803 [main] INFO com.example.OtelApplication.OpentelemetryRunner.OtelObjectMaker -- Composed otel.properties file with no issue.
 22:57:05.803 [main] INFO com.example.OtelApplication.OpentelemetryRunner.OtelObjectMaker -- Contact : https://t.me/ryankimjh546
 ```
+# What each files do?
+- OtelApplication.java: file which have main method. You have to fix package name with your package name.
+- OtelMethodExtractor.java: this file extract your class and methods below.
+- OtelObjectMaker.java: this file make objects which essential for `Opentelemetry-java-property-maker`
+- OtelPropertiesMaker.java: this file create, delete or edit `otel.properties` automatically
+
+
+
+# WARNING!!
+- YOU HAVE TO FIX PACKAGE NAME WITH YOUR PACKAGE NAME
+- `OpentelemetryRunner` HAVE TO PLACE WHERE YOUR `main` METHOD PLACE
+- YOU HAVE TO EDIT `otel.properties` FILE'S VALUE FIT ON YOU
