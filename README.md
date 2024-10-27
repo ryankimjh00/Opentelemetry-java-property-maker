@@ -33,7 +33,6 @@ com.example.path.change.{ClassName20}[Method1 Method2,Method3];
 22:57:05.606 [main] INFO com.example.OtelApplication.OpentelemetryRunner.OtelPropertiesMaker -- Existing otel.properties file deleted.
 22:57:05.612 [main] INFO com.example.OtelApplication.OpentelemetryRunner.OtelPropertiesMaker -- Created otel.properties file.
 22:57:05.803 [main] INFO com.example.OtelApplication.OpentelemetryRunner.OtelObjectMaker -- Composed otel.properties file with no issue.
-22:57:05.803 [main] INFO com.example.OtelApplication.OpentelemetryRunner.OtelObjectMaker -- Contact : https://t.me/ryankimjh546
 ```
 # What each files do?
 - OtelApplication.java: file which have main method. You have to fix package name with your package name.
